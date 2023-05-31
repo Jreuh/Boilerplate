@@ -61,7 +61,7 @@ async function start(): Promise<void> {
       return false;
     },
   });
-  console.log(schema);
+  // console.log(schema);
 
   const server = new ApolloServer({
     schema,
@@ -74,7 +74,7 @@ async function start(): Promise<void> {
       credentials: true,
     },
   });
-  console.log(env.CORS_ALLOWED_ORIGINS);
+  // console.log(env.CORS_ALLOWED_ORIGINS);
 
   await server.listen().then(({ url }: { url: string }) => {
     console.log(`🚀  Server ready at ${url}`);

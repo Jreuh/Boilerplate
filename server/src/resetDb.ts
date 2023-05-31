@@ -12,9 +12,9 @@ async function reset(): Promise<void> {
       role: "admin",
     },
     {
-      email: "jackieA5@autoplus.vroom",
+      email: "user2@student.fr",
       hashedPassword: await encodePassword("a5a5a5a5a5"),
-      pseudo: "Satanas",
+      pseudo: "LDvinci",
       role: "passenger",
     },
   ]);
